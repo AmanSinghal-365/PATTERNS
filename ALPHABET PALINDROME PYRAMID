@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    char p='A';
+    for(int r=0;r<a;r++)
+    {
+        for(int c=0;c<r+1;c++)
+        {
+            cout<<char('A'+c);
+        }
+        for(int c=0;c<r;c++)
+        {
+            cout<<char(p-c-1);
+        }
+        p=char(p+1);
+        cout<<endl;
+    }
+}
+OUTPUT
+5
+A
+ABA
+ABCBA
+ABCDCBA
+ABCDEDCBA

@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    for(int r=0;r<a;r++)
+    {
+        if(r<(a+1)/2)
+        {
+            for(int c=0;c<r+1;c++)
+            {
+                cout<<'*';
+            }
+            for(int c=0;c<a-2*r-1;c++)
+            {
+                cout<<' ';
+            }
+            for(int c=0;c<r+1;c++)
+            {
+                cout<<'*';
+            }
+        }
+        else
+        {
+            for(int c=0;c<a-r;c++)
+            {
+                cout<<'*';
+            }
+            for(int c=0;c<2*r-a+1;c++)
+            {
+                cout<<' ';
+            }
+            for(int c=0;c<a-r;c++)
+            {
+                cout<<'*';
+            }
+        }
+        cout<<endl;
+    }
+}

@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    for(int r=0;r<a;r++)
+    {
+        for(int c=0;c<a-r-1;c++)
+        {
+            cout<<' ';
+        }
+        for(int c=0;c<r+1;c++)
+        {
+            cout<<r+1+c;
+        }
+        for(int c=0;c<r;c++)
+        {
+            cout<<2*r-c;
+        }
+        cout<<endl;
+    }   
+}
+OUTPUT
+5
+    1
+   232
+  34543
+ 4567654
+567898765
